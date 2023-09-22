@@ -62,7 +62,7 @@ dev-noxfile = [
   "frequenz-repo-config[api] == 0.4.0",
 ]
 dev-pylint = [
-  "pylint == 2.17.3",
+  "pylint == 2.17.5",
   # For checking the noxfile, docs/ script, and tests
   "frequenz-api-weather[dev-mkdocs,dev-noxfile,dev-pytest]",
 ]
