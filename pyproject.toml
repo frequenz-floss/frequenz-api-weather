@@ -72,7 +72,7 @@ dev-pylint = [
   "frequenz-api-weather[dev-mkdocs,dev-noxfile,dev-pytest]",
 ]
 dev-pytest = [
-  "pytest == 7.4.0",
+  "pytest == 7.4.2",
   "frequenz-repo-config[extra-lint-examples] == 0.6.2",
 ]
 dev = [
