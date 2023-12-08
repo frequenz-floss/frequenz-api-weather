@@ -13,6 +13,7 @@ package frequenz.api.weatherforecast.v1;
 import "frequenz/api/common/v1/location.proto";
 import "frequenz/api/common/v1/pagination/pagination_info.proto";
 import "frequenz/api/common/v1/pagination/pagination_params.proto";
+import "google/protobuf/duration.proto";
 import "google/protobuf/timestamp.proto";
 
 
@@ -111,6 +112,11 @@ message ReceiveLiveWeatherForecastRequest {
   // List of required features. If none are specified, all available features
   // will be streamed.
   repeated ForecastFeature features = 2;
+
+  // The validity times for which forecasts are being requested. These values
+  // should be relative to the generation time of the forecasts. When none are
+  // provided, forecasts for all available validity times will be streamed.
+  repeated google.protobuf.Duration validity_times = 3;
 }
 
 // The `ForecastResponse` message  provides a structured format for representing
