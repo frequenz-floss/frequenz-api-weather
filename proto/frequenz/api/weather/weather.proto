@@ -98,6 +98,11 @@ message GetHistoricalWeatherForecastRequest {
   // same request must include the 'page_token' from the previous response.
   frequenz.api.common.v1.pagination.PaginationParams
     pagination_params = 5;
+
+  // The validity times for which forecasts are being requested. These values
+  // should be relative to the generation time of the forecasts. When none are
+  // provided, forecasts for all available validity times will be returned.
+  repeated google.protobuf.Duration validity_times = 6;
 }
 
 // The `ReceiveLiveWeatherForecastRequest` message defines parameters for
