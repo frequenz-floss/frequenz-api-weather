@@ -10,9 +10,9 @@ syntax = "proto3";
 
 package frequenz.api.weatherforecast.v1;
 
-import "frequenz/api/common/location.proto";
-import "frequenz/api/common/pagination/pagination_info.proto";
-import "frequenz/api/common/pagination/pagination_params.proto";
+import "frequenz/api/weather/location.proto";
+import "frequenz/api/weather/pagination/pagination_info.proto";
+import "frequenz/api/weather/pagination/pagination_params.proto";
 import "google/protobuf/timestamp.proto";
 
 

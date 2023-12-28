@@ -11,8 +11,7 @@ import logging
 from dataclasses import dataclass
 
 import numpy as np
-from frequenz.api.common import location_pb2
-from frequenz.api.weather import weather_pb2
+from frequenz.api.weather import location_pb2, weather_pb2
 
 # Set up logging
 _logger = logging.getLogger(__name__)
