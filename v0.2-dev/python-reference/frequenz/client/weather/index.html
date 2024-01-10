@@ -1426,14 +1426,14 @@
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.Client.__init__" class="md-nav__link">
-    __init__()
+    __init__
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.Client.stream_live_forecast" class="md-nav__link">
-    stream_live_forecast()
+    stream_live_forecast
   </a>
   
 </li>
@@ -1535,7 +1535,7 @@
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.ForecastFeature.from_pb" class="md-nav__link">
-    from_pb()
+    from_pb
   </a>
   
 </li>
@@ -1568,14 +1568,14 @@
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.Forecasts.from_pb" class="md-nav__link">
-    from_pb()
+    from_pb
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.Forecasts.to_ndarray_vlf" class="md-nav__link">
-    to_ndarray_vlf()
+    to_ndarray_vlf
   </a>
   
 </li>
@@ -1608,14 +1608,14 @@
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.Location.from_pb" class="md-nav__link">
-    from_pb()
+    from_pb
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#frequenz.client.weather.Location.to_pb" class="md-nav__link">
-    to_pb()
+    to_pb
   </a>
   
 </li>
@@ -1664,7 +1664,6 @@
 
 
 
-
 <h2 id="frequenz.client.weather" class="doc doc-heading">
           <span class="doc doc-object-name doc-module-name">frequenz.client.weather</span>
 
@@ -1687,7 +1686,6 @@
 <h3 id="frequenz.client.weather-classes">Classes<a href="#frequenz.client.weather-classes" class="headerlink" title="Permanent link">¤</a></h3>
 
 <div class="doc doc-object doc-class">
-
 
 
 
@@ -1818,15 +1816,12 @@
 
 
 
-
 <h6 id="frequenz.client.weather.Client.__init__" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">__init__</span>
 
 
 <a href="#frequenz.client.weather.Client.__init__" class="headerlink" title="Permanent link">¤</a></h6>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="fm">__init__</span><span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">grpc_channel</span><span class="p">:</span> <span class="n">grpc</span><span class="o">.</span><span class="n">aio</span><span class="o">.</span><span class="n">Channel</span><span class="p">,</span> <span class="n">svc_addr</span><span class="p">:</span> <span class="nb">str</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="fm">__init__</span><span class="p">(</span><span class="n">grpc_channel</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" title="grpc.aio.Channel" href="https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.Channel">Channel</a></span><span class="p">,</span> <span class="n">svc_addr</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -1916,7 +1911,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.Client.stream_live_forecast" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">stream_live_forecast</span>
 
@@ -1927,9 +1921,9 @@
 
 <a href="#frequenz.client.weather.Client.stream_live_forecast" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">stream_live_forecast</span><span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">locations</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Location</span><span class="p">],</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">features</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ForecastFeature</span><span class="p">],</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Receiver</span><span class="p">[</span><span class="n">Forecasts</span><span class="p">]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">locations</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.Location" href="#frequenz.client.weather.Location">Location</a></span><span class="p">],</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.ForecastFeature" href="#frequenz.client.weather.ForecastFeature">ForecastFeature</a></span><span class="p">],</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><span title="frequenz.channels.Receiver">Receiver</span></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.Forecasts" href="#frequenz.client.weather.Forecasts">Forecasts</a></span><span class="p">]</span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -2071,10 +2065,10 @@
 
   </div>
 
+
 </div>
 
 <div class="doc doc-object doc-class">
-
 
 
 
@@ -2230,7 +2224,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.SURFACE_NET_SOLAR_RADIATION" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">SURFACE_NET_SOLAR_RADIATION</span>
 
@@ -2242,7 +2235,7 @@
 
 <a href="#frequenz.client.weather.ForecastFeature.SURFACE_NET_SOLAR_RADIATION" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">SURFACE_NET_SOLAR_RADIATION</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_SURFACE_NET_SOLAR_RADIATION</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_SURFACE_NET_SOLAR_RADIATION">FORECAST_FEATURE_SURFACE_NET_SOLAR_RADIATION</span></span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -2257,7 +2250,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.SURFACE_SOLAR_RADIATION_DOWNWARDS" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">SURFACE_SOLAR_RADIATION_DOWNWARDS</span>
 
@@ -2269,7 +2261,7 @@
 
 <a href="#frequenz.client.weather.ForecastFeature.SURFACE_SOLAR_RADIATION_DOWNWARDS" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">SURFACE_SOLAR_RADIATION_DOWNWARDS</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_SURFACE_SOLAR_RADIATION_DOWNWARDS</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_SURFACE_SOLAR_RADIATION_DOWNWARDS">FORECAST_FEATURE_SURFACE_SOLAR_RADIATION_DOWNWARDS</span></span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -2284,7 +2276,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.TEMPERATURE_2_METRE" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">TEMPERATURE_2_METRE</span>
 
@@ -2295,9 +2286,7 @@
   </span>
 
 <a href="#frequenz.client.weather.ForecastFeature.TEMPERATURE_2_METRE" class="headerlink" title="Permanent link">¤</a></h6>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">TEMPERATURE_2_METRE</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_TEMPERATURE_2_METRE</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">TEMPERATURE_2_METRE</span> <span class="o">=</span> <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_TEMPERATURE_2_METRE">FORECAST_FEATURE_TEMPERATURE_2_METRE</span></span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -2311,7 +2300,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.UNSPECIFIED" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">UNSPECIFIED</span>
 
@@ -2322,9 +2310,7 @@
   </span>
 
 <a href="#frequenz.client.weather.ForecastFeature.UNSPECIFIED" class="headerlink" title="Permanent link">¤</a></h6>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">UNSPECIFIED</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_UNSPECIFIED</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">UNSPECIFIED</span> <span class="o">=</span> <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_UNSPECIFIED">FORECAST_FEATURE_UNSPECIFIED</span></span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -2335,7 +2321,6 @@
 </div>
 
 <div class="doc doc-object doc-attribute">
-
 
 
 
@@ -2350,7 +2335,7 @@
 
 <a href="#frequenz.client.weather.ForecastFeature.U_WIND_COMPONENT_100_METRE" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">U_WIND_COMPONENT_100_METRE</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_U_WIND_COMPONENT_100_METRE</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_U_WIND_COMPONENT_100_METRE">FORECAST_FEATURE_U_WIND_COMPONENT_100_METRE</span></span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -2365,7 +2350,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.U_WIND_COMPONENT_10_METRE" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">U_WIND_COMPONENT_10_METRE</span>
 
@@ -2377,7 +2361,7 @@
 
 <a href="#frequenz.client.weather.ForecastFeature.U_WIND_COMPONENT_10_METRE" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">U_WIND_COMPONENT_10_METRE</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_U_WIND_COMPONENT_10_METRE</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_U_WIND_COMPONENT_10_METRE">FORECAST_FEATURE_U_WIND_COMPONENT_10_METRE</span></span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -2392,7 +2376,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.V_WIND_COMPONENT_100_METRE" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">V_WIND_COMPONENT_100_METRE</span>
 
@@ -2404,7 +2387,7 @@
 
 <a href="#frequenz.client.weather.ForecastFeature.V_WIND_COMPONENT_100_METRE" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">V_WIND_COMPONENT_100_METRE</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_V_WIND_COMPONENT_100_METRE</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_V_WIND_COMPONENT_100_METRE">FORECAST_FEATURE_V_WIND_COMPONENT_100_METRE</span></span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -2419,7 +2402,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.V_WIND_COMPONENT_10_METRE" class="doc doc-heading">
           <span class="doc doc-object-name doc-attribute-name">V_WIND_COMPONENT_10_METRE</span>
 
@@ -2431,7 +2413,7 @@
 
 <a href="#frequenz.client.weather.ForecastFeature.V_WIND_COMPONENT_10_METRE" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">V_WIND_COMPONENT_10_METRE</span> <span class="o">=</span> <span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">FORECAST_FEATURE_V_WIND_COMPONENT_10_METRE</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.FORECAST_FEATURE_V_WIND_COMPONENT_10_METRE">FORECAST_FEATURE_V_WIND_COMPONENT_10_METRE</span></span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span>
 </span></code></pre></div>
 
@@ -2449,7 +2431,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.ForecastFeature.from_pb" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">from_pb</span>
 
@@ -2459,9 +2440,7 @@
   </span>
 
 <a href="#frequenz.client.weather.ForecastFeature.from_pb" class="headerlink" title="Permanent link">¤</a></h6>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">from_pb</span><span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">forecast_feature</span><span class="p">:</span> <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ForecastFeature</span><span class="o">.</span><span class="n">ValueType</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ForecastFeature</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">from_pb</span><span class="p">(</span><span class="n">forecast_feature</span><span class="p">:</span> <span class="n"><span title="frequenz.api.weather.weather_pb2.ForecastFeature.ValueType">ValueType</span></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.ForecastFeature" href="#frequenz.client.weather.ForecastFeature">ForecastFeature</a></span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -2571,10 +2550,10 @@
 
   </div>
 
+
 </div>
 
 <div class="doc doc-object doc-class">
-
 
 
 
@@ -2939,7 +2918,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.Forecasts.from_pb" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">from_pb</span>
 
@@ -2950,8 +2928,8 @@
 
 <a href="#frequenz.client.weather.Forecasts.from_pb" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">from_pb</span><span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">forecasts</span><span class="p">:</span> <span class="n">weather_pb2</span><span class="o">.</span><span class="n">ReceiveLiveWeatherForecastResponse</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Forecasts</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">forecasts</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastResponse" href="../../api/weather/weather_pb2/#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastResponse">ReceiveLiveWeatherForecastResponse</a></span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.Forecasts" href="#frequenz.client.weather.Forecasts">Forecasts</a></span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -3048,20 +3026,16 @@
 
 
 
-
 <h6 id="frequenz.client.weather.Forecasts.to_ndarray_vlf" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">to_ndarray_vlf</span>
 
 
 <a href="#frequenz.client.weather.Forecasts.to_ndarray_vlf" class="headerlink" title="Permanent link">¤</a></h6>
 <div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">to_ndarray_vlf</span><span class="p">(</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">validity_times</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">dt</span><span class="o">.</span><span class="n">timedelta</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">locations</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Location</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">features</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">ForecastFeature</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">[</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nb">tuple</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">],</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">],</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">validity_times</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="datetime.timedelta" href="https://docs.python.org/3/library/datetime.html#datetime.timedelta">timedelta</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">locations</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.Location" href="#frequenz.client.weather.Location">Location</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">features</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.ForecastFeature" href="#frequenz.client.weather.ForecastFeature">ForecastFeature</a></span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><span title="numpy.ndarray">ndarray</span></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#tuple">tuple</a></span><span class="p">[</span><span class="n"><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></span><span class="p">],</span> <span class="n"><span title="numpy.dtype">dtype</span></span><span class="p">[</span><span class="n"><span title="numpy.float64">float64</span></span><span class="p">]]</span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -3481,10 +3455,10 @@
 
   </div>
 
+
 </div>
 
 <div class="doc doc-object doc-class">
-
 
 
 
@@ -3515,7 +3489,7 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>latitude</code></td>
+          <td><code><span title="frequenz.client.weather.Location.latitude">latitude</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>latitude of the location.</p>
@@ -3529,7 +3503,7 @@
           </td>
         </tr>
         <tr>
-          <td><code>longitude</code></td>
+          <td><code><span title="frequenz.client.weather.Location.longitude">longitude</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>longitude of the location.</p>
@@ -3543,7 +3517,7 @@
           </td>
         </tr>
         <tr>
-          <td><code>country_code</code></td>
+          <td><code><span title="frequenz.client.weather.Location.country_code">country_code</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>ISO 3166-1 alpha-2 country code of the location.</p>
@@ -3662,7 +3636,6 @@
 
 
 
-
 <h6 id="frequenz.client.weather.Location.from_pb" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">from_pb</span>
 
@@ -3672,7 +3645,7 @@
   </span>
 
 <a href="#frequenz.client.weather.Location.from_pb" class="headerlink" title="Permanent link">¤</a></h6>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">from_pb</span><span class="p">(</span><span class="n">location</span><span class="p">:</span> <span class="n">location_pb2</span><span class="o">.</span><span class="n">Location</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Location</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">from_pb</span><span class="p">(</span><span class="n">location</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" title="frequenz.api.common.location_pb2.Location" href="../../api/common/location_pb2/#frequenz.api.common.location_pb2.Location">Location</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="frequenz.client.weather._types.Location" href="#frequenz.client.weather.Location">Location</a></span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -3773,13 +3746,12 @@
 
 
 
-
 <h6 id="frequenz.client.weather.Location.to_pb" class="doc doc-heading">
           <span class="doc doc-object-name doc-function-name">to_pb</span>
 
 
 <a href="#frequenz.client.weather.Location.to_pb" class="headerlink" title="Permanent link">¤</a></h6>
-<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">to_pb</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">location_pb2</span><span class="o">.</span><span class="n">Location</span>
+<div class="doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">to_pb</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n"><a class="autorefs autorefs-internal" title="frequenz.api.common.location_pb2.Location" href="../../api/common/location_pb2/#frequenz.api.common.location_pb2.Location">Location</a></span>
 </span></code></pre></div>
 
   <div class="doc doc-contents ">
@@ -3845,6 +3817,7 @@
   </div>
 
   </div>
+
 
 </div>
 
