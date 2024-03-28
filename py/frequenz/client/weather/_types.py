@@ -128,11 +128,11 @@ class Location:
 class Forecasts:
     """Weather forecast data."""
 
-    _forecasts_pb: weather_pb2.ReceiveLiveWeatherForecastResponse
+    _forecasts_pb: weather_pb2.ReceiveLiveWeatherForecastResponse | weather_pb2.GetHistoricalWeatherForecastResponse
 
     @classmethod
     def from_pb(
-        cls, forecasts: weather_pb2.ReceiveLiveWeatherForecastResponse
+        cls, forecasts: weather_pb2.ReceiveLiveWeatherForecastResponse | weather_pb2.GetHistoricalWeatherForecastResponse
     ) -> Forecasts:
         """Convert a protobuf Forecast message to Forecast object.
 
