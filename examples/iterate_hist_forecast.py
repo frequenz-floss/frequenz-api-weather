@@ -54,10 +54,11 @@ async def main(service_address: str) -> None:
     )
 
     async for location_forecast in location_forecast_iterator:
-        for forecasts in location_forecast.forecasts:
-            print("Timestamp:", forecasts.valid_at_ts)
-            for feature_forecast in forecasts.features:
-                print(feature_forecast)
+        print(location_forecast.to_ndarray_vlf())
+        #for forecasts in location_forecast.forecasts:
+        #    print("Timestamp:", forecasts.valid_at_ts)
+        #    for feature_forecast in forecasts.features:
+        #        print(feature_forecast)
 
 
 asyncio.run(main(_service_address))
