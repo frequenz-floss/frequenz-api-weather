@@ -10,7 +10,7 @@ from frequenz.api.common.pagination import pagination_params_pb2
 from frequenz.api.weather import weather_pb2, weather_pb2_grpc
 from google.protobuf import timestamp_pb2
 
-from ._types import ForecastFeature, Location
+from ._types import ForecastFeature, Forecasts, Location
 
 PAGE_SIZE = 20
 EMPTY_PAGE_TOKEN = ""
@@ -90,4 +90,4 @@ class HistoricalForecastIterator(AsyncIterator[weather_pb2.LocationForecast]):
             self.location_forecasts = response.location_forecasts
 
         location_forecast: weather_pb2.LocationForecast = self.location_forecasts.pop(0)
-        return location_forecast
+        return Forecasts.from_pb(location_forecast)
