@@ -1467,6 +1467,18 @@ features.</p>
 <td>repeated</td>
 <td>List of required features. If none are specified, all available features will be streamed.</td>
 </tr>
+<tr>
+<td>forecast_horizon_min</td>
+<td><a href="#uint32">uint32</a></td>
+<td>optional</td>
+<td>Minimum forecast horizon (in hours) to include in the returned forecasts. Each forecast predicts weather conditions for a certain time span into the future (the forecast horizon). If not specified, forecasts starting from the earliest available horizon will be returned.</td>
+</tr>
+<tr>
+<td>forecast_horizon_max</td>
+<td><a href="#uint32">uint32</a></td>
+<td>optional</td>
+<td>Maximum forecast horizon (in hours) to include in the returned forecasts. If not specified, forecasts up to their maximum available horizon will be returned. If the requested horizon exceeds the available forecast data, the maximum available horizon will be used.</td>
+</tr>
 </tbody>
 </table>
 <p><a name="frequenz-api-weatherforecast-v1-ReceiveLiveWeatherForecastResponse"></a></p>

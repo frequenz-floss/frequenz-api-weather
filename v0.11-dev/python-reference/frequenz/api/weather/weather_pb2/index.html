@@ -1159,6 +1159,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_max" class="md-nav__link">
+    <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;forecast_horizon_max
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_min" class="md-nav__link">
+    <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;forecast_horizon_min
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.locations" class="md-nav__link">
     <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;locations
   </a>
@@ -1622,6 +1636,20 @@
           <li class="md-nav__item">
   <a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.features" class="md-nav__link">
     <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_max" class="md-nav__link">
+    <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;forecast_horizon_max
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_min" class="md-nav__link">
+    <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;forecast_horizon_min
   </a>
   
 </li>
@@ -2501,6 +2529,58 @@ features.</p>
 
       <p>List of required features. If none are specified, all available features
 will be streamed.</p>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h6 id="frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_max" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">forecast_horizon_max</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_max" class="headerlink" title="Permanent link">¤</a></h6>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">forecast_horizon_max</span><span class="p">:</span> <span class="n"><span title="builtins.int">int</span></span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+      <p>Maximum forecast horizon (in hours) to include in the returned forecasts.
+If not specified, forecasts up to their maximum available horizon will be
+returned. If the requested horizon exceeds the available forecast data,
+the maximum available horizon will be used.</p>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h6 id="frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_min" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">forecast_horizon_min</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+<a href="#frequenz.api.weather.weather_pb2.ReceiveLiveWeatherForecastRequest.forecast_horizon_min" class="headerlink" title="Permanent link">¤</a></h6>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">forecast_horizon_min</span><span class="p">:</span> <span class="n"><span title="builtins.int">int</span></span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+      <p>Minimum forecast horizon (in hours) to include in the returned forecasts.
+Each forecast predicts weather conditions for a certain time span into the
+future (the forecast horizon). If not specified, forecasts starting from
+the earliest available horizon will be returned.</p>
     </div>
 
 </div>
