@@ -670,20 +670,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gethistoricalweatherforecastrequest" class="md-nav__link">
-    GetHistoricalWeatherForecastRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gethistoricalweatherforecastresponse" class="md-nav__link">
-    GetHistoricalWeatherForecastResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#locationforecast" class="md-nav__link">
     LocationForecast
   </a>
@@ -700,6 +686,20 @@
           <li class="md-nav__item">
   <a href="#locationforecastforecastsfeatureforecast" class="md-nav__link">
     LocationForecast.Forecasts.FeatureForecast
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivehistoricalweatherforecastrequest" class="md-nav__link">
+    ReceiveHistoricalWeatherForecastRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivehistoricalweatherforecastresponse" class="md-nav__link">
+    ReceiveHistoricalWeatherForecastResponse
   </a>
   
 </li>
@@ -1152,20 +1152,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gethistoricalweatherforecastrequest" class="md-nav__link">
-    GetHistoricalWeatherForecastRequest
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gethistoricalweatherforecastresponse" class="md-nav__link">
-    GetHistoricalWeatherForecastResponse
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#locationforecast" class="md-nav__link">
     LocationForecast
   </a>
@@ -1182,6 +1168,20 @@
           <li class="md-nav__item">
   <a href="#locationforecastforecastsfeatureforecast" class="md-nav__link">
     LocationForecast.Forecasts.FeatureForecast
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivehistoricalweatherforecastrequest" class="md-nav__link">
+    ReceiveHistoricalWeatherForecastRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#receivehistoricalweatherforecastresponse" class="md-nav__link">
+    ReceiveHistoricalWeatherForecastResponse
   </a>
   
 </li>
@@ -1251,11 +1251,11 @@
 <li>
 <p><a href="#frequenz_api_weather_weather-proto">frequenz/api/weather/weather.proto</a></p>
 <ul>
-<li><a href="#frequenz-api-weatherforecast-v1-GetHistoricalWeatherForecastRequest">GetHistoricalWeatherForecastRequest</a></li>
-<li><a href="#frequenz-api-weatherforecast-v1-GetHistoricalWeatherForecastResponse">GetHistoricalWeatherForecastResponse</a></li>
 <li><a href="#frequenz-api-weatherforecast-v1-LocationForecast">LocationForecast</a></li>
 <li><a href="#frequenz-api-weatherforecast-v1-LocationForecast-Forecasts">LocationForecast.Forecasts</a></li>
 <li><a href="#frequenz-api-weatherforecast-v1-LocationForecast-Forecasts-FeatureForecast">LocationForecast.Forecasts.FeatureForecast</a></li>
+<li><a href="#frequenz-api-weatherforecast-v1-ReceiveHistoricalWeatherForecastRequest">ReceiveHistoricalWeatherForecastRequest</a></li>
+<li><a href="#frequenz-api-weatherforecast-v1-ReceiveHistoricalWeatherForecastResponse">ReceiveHistoricalWeatherForecastResponse</a></li>
 <li><a href="#frequenz-api-weatherforecast-v1-ReceiveLiveWeatherForecastRequest">ReceiveLiveWeatherForecastRequest</a></li>
 <li>
 <p><a href="#frequenz-api-weatherforecast-v1-ReceiveLiveWeatherForecastResponse">ReceiveLiveWeatherForecastResponse</a></p>
@@ -1276,81 +1276,6 @@
 <p align="right"><a href="#top">Top</a></p>
 
 <h2 id="frequenzapiweatherweatherproto">frequenz/api/weather/weather.proto<a class="headerlink" href="#frequenzapiweatherweatherproto" title="Permanent link">¤</a></h2>
-<p><a name="frequenz-api-weatherforecast-v1-GetHistoricalWeatherForecastRequest"></a></p>
-<h3 id="gethistoricalweatherforecastrequest">GetHistoricalWeatherForecastRequest<a class="headerlink" href="#gethistoricalweatherforecastrequest" title="Permanent link">¤</a></h3>
-<p>The <code>GetHistoricalWeatherForecastRequest</code> message defines parameters for
-retrieving historical weather forecasts, targeting a specific location
-and time period, with designated features.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Label</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>locations</td>
-<td><a href="#frequenz-api-common-v1-Location">frequenz.api.common.v1.Location</a></td>
-<td>repeated</td>
-<td>The locations for which the forecast is being requested. The maximum number of locations that can be requested is 50. If the request exceeds this limit, the API will respond with an error.</td>
-</tr>
-<tr>
-<td>features</td>
-<td><a href="#frequenz-api-weatherforecast-v1-ForecastFeature">ForecastFeature</a></td>
-<td>repeated</td>
-<td>List of required features. If none are specified, all available features will be returned.</td>
-</tr>
-<tr>
-<td>start_ts</td>
-<td><a href="#google-protobuf-Timestamp">google.protobuf.Timestamp</a></td>
-<td></td>
-<td>The UTC timestamp indicating the start of the requested historical forecast period.</td>
-</tr>
-<tr>
-<td>end_ts</td>
-<td><a href="#google-protobuf-Timestamp">google.protobuf.Timestamp</a></td>
-<td></td>
-<td>The UTC timestamp indicating the end of the requested historical forecast period.</td>
-</tr>
-<tr>
-<td>pagination_params</td>
-<td><a href="#frequenz-api-common-v1-pagination-PaginationParams">frequenz.api.common.v1.pagination.PaginationParams</a></td>
-<td></td>
-<td>The parameters define the &#39;page_size&#39; and the &#39;page_token&#39;. An inital query of a request will omit the &#39;page_token&#39;. Subsequent queries of the same request must include the &#39;page_token&#39; from the previous response.</td>
-</tr>
-</tbody>
-</table>
-<p><a name="frequenz-api-weatherforecast-v1-GetHistoricalWeatherForecastResponse"></a></p>
-<h3 id="gethistoricalweatherforecastresponse">GetHistoricalWeatherForecastResponse<a class="headerlink" href="#gethistoricalweatherforecastresponse" title="Permanent link">¤</a></h3>
-<p>The message encapsulates a collection of historical weather forecasts, each
-corresponding to a requested location.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Type</th>
-<th>Label</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>location_forecasts</td>
-<td><a href="#frequenz-api-weatherforecast-v1-LocationForecast">LocationForecast</a></td>
-<td>repeated</td>
-<td></td>
-</tr>
-<tr>
-<td>pagination_info</td>
-<td><a href="#frequenz-api-common-v1-pagination-PaginationInfo">frequenz.api.common.v1.pagination.PaginationInfo</a></td>
-<td></td>
-<td>The pagination_info contains the number of &#39;total_items&#39; in the response and the &#39;next_page_token&#39; for the subsequent query of the request. It is omitted in the last response.</td>
-</tr>
-</tbody>
-</table>
 <p><a name="frequenz-api-weatherforecast-v1-LocationForecast"></a></p>
 <h3 id="locationforecast">LocationForecast<a class="headerlink" href="#locationforecast" title="Permanent link">¤</a></h3>
 <p>The <code>ForecastResponse</code> message  provides a structured format for representing
@@ -1437,6 +1362,69 @@ and creation.</p>
 <td><a href="#float">float</a></td>
 <td></td>
 <td>Value of the feature. Unit depends on the feature (e.g., m/s for wind speed, W/m² for radiation). Details can be found in the ForecastFeature enum under each feature.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="frequenz-api-weatherforecast-v1-ReceiveHistoricalWeatherForecastRequest"></a></p>
+<h3 id="receivehistoricalweatherforecastrequest">ReceiveHistoricalWeatherForecastRequest<a class="headerlink" href="#receivehistoricalweatherforecastrequest" title="Permanent link">¤</a></h3>
+<p>The <code>ReceiveHistoricalWeatherForecastRequest</code> message defines parameters for
+retrieving historical weather forecasts, targeting a specific location
+and time period, with designated features.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>locations</td>
+<td><a href="#frequenz-api-common-v1-Location">frequenz.api.common.v1.Location</a></td>
+<td>repeated</td>
+<td>The locations for which the forecast is being requested. The maximum number of locations that can be requested is 50. If the request exceeds this limit, the API will respond with an error.</td>
+</tr>
+<tr>
+<td>features</td>
+<td><a href="#frequenz-api-weatherforecast-v1-ForecastFeature">ForecastFeature</a></td>
+<td>repeated</td>
+<td>List of required features. If none are specified, all available features will be returned.</td>
+</tr>
+<tr>
+<td>creation_start_ts</td>
+<td><a href="#google-protobuf-Timestamp">google.protobuf.Timestamp</a></td>
+<td></td>
+<td>The start of the forecast creation time range to query. Only forecasts created at or after this UTC timestamp will be included.</td>
+</tr>
+<tr>
+<td>creation_end_ts</td>
+<td><a href="#google-protobuf-Timestamp">google.protobuf.Timestamp</a></td>
+<td></td>
+<td>The end of the forecast creation time range to query. Only forecasts created before this UTC timestamp will be included.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="frequenz-api-weatherforecast-v1-ReceiveHistoricalWeatherForecastResponse"></a></p>
+<h3 id="receivehistoricalweatherforecastresponse">ReceiveHistoricalWeatherForecastResponse<a class="headerlink" href="#receivehistoricalweatherforecastresponse" title="Permanent link">¤</a></h3>
+<p>The message encapsulates a collection of historical weather forecasts, each
+corresponding to a requested location.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location_forecasts</td>
+<td><a href="#frequenz-api-weatherforecast-v1-LocationForecast">LocationForecast</a></td>
+<td>repeated</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -1580,9 +1568,9 @@ vary. Use the data responsibly.</p>
 </thead>
 <tbody>
 <tr>
-<td>GetHistoricalWeatherForecast</td>
-<td><a href="#frequenz-api-weatherforecast-v1-GetHistoricalWeatherForecastRequest">GetHistoricalWeatherForecastRequest</a></td>
-<td><a href="#frequenz-api-weatherforecast-v1-GetHistoricalWeatherForecastResponse">GetHistoricalWeatherForecastResponse</a></td>
+<td>ReceiveHistoricalWeatherForecast</td>
+<td><a href="#frequenz-api-weatherforecast-v1-ReceiveHistoricalWeatherForecastRequest">ReceiveHistoricalWeatherForecastRequest</a></td>
+<td><a href="#frequenz-api-weatherforecast-v1-ReceiveHistoricalWeatherForecastResponse">ReceiveHistoricalWeatherForecastResponse</a> stream</td>
 <td>Returns historical weather forecast features for a geo location for a specified time range.</td>
 </tr>
 <tr>
