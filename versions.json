@@ -1,1 +1,155 @@
-[{"version":"v1.0","title":"v1.0.0","aliases":["latest","v1"]},{"version":"v0.14-dev","title":"v0.14-dev (3413539)","aliases":["v0-dev","latest-dev"]},{"version":"v0.13-dev","title":"v0.13-dev (6b53dff)","aliases":[]},{"version":"v0.13","title":"v0.13.0","aliases":["v0"]},{"version":"v0.12-dev","title":"v0.12-dev (867da43)","aliases":[]},{"version":"v0.12","title":"v0.12.0","aliases":[]},{"version":"v0.11-dev","title":"v0.11-dev (102539f)","aliases":[]},{"version":"v0.11","title":"v0.11.1","aliases":[]},{"version":"v0.10-dev","title":"v0.10-dev (940f7b8)","aliases":[]},{"version":"v0.10","title":"v0.10.0","aliases":[]},{"version":"v0.9-dev","title":"v0.9-dev (8b34000)","aliases":[]},{"version":"v0.9","title":"v0.9.0","aliases":[]},{"version":"v0.8-dev","title":"v0.8-dev (63d39ef)","aliases":[]},{"version":"v0.8","title":"v0.8.0","aliases":[]},{"version":"v0.7-dev","title":"v0.7-dev (1358ab4)","aliases":[]},{"version":"v0.7","title":"v0.7.0","aliases":[]},{"version":"v0.6-dev","title":"v0.6-dev (9eda8a1)","aliases":[]},{"version":"v0.6","title":"v0.6.0","aliases":[]},{"version":"v0.5-dev","title":"v0.5-dev (354537e)","aliases":[]},{"version":"v0.5","title":"v0.5.0","aliases":[]},{"version":"v0.4-dev","title":"v0.4-dev (e324894)","aliases":[]},{"version":"v0.4","title":"v0.4.0","aliases":[]},{"version":"v0.3-dev","title":"v0.3-dev (7fc2504)","aliases":[]},{"version":"v0.3","title":"v0.3.0","aliases":[]},{"version":"v0.2-dev","title":"v0.2-dev (05b72a8)","aliases":[]},{"version":"v0.2","title":"v0.2.0","aliases":[]},{"version":"v0.1-dev","title":"v0.1-dev","aliases":[]},{"version":"v0.1","title":"v0.1.0","aliases":[]},{"version":"v0.0","title":"v0.0.13","aliases":[]}]
+[
+  {
+    "version": "v1.0",
+    "title": "v1.0.0",
+    "aliases": [
+      "latest",
+      "v1"
+    ]
+  },
+  {
+    "version": "v0.14-dev",
+    "title": "v0.14-dev (6f9249b)",
+    "aliases": [
+      "latest-dev",
+      "v0-dev"
+    ]
+  },
+  {
+    "version": "v0.13",
+    "title": "v0.13.0",
+    "aliases": [
+      "v0"
+    ]
+  },
+  {
+    "version": "v0.13-dev",
+    "title": "v0.13-dev (6b53dff)",
+    "aliases": []
+  },
+  {
+    "version": "v0.12",
+    "title": "v0.12.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.12-dev",
+    "title": "v0.12-dev (867da43)",
+    "aliases": []
+  },
+  {
+    "version": "v0.11",
+    "title": "v0.11.1",
+    "aliases": []
+  },
+  {
+    "version": "v0.11-dev",
+    "title": "v0.11-dev (102539f)",
+    "aliases": []
+  },
+  {
+    "version": "v0.10",
+    "title": "v0.10.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.10-dev",
+    "title": "v0.10-dev (940f7b8)",
+    "aliases": []
+  },
+  {
+    "version": "v0.9",
+    "title": "v0.9.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.9-dev",
+    "title": "v0.9-dev (8b34000)",
+    "aliases": []
+  },
+  {
+    "version": "v0.8",
+    "title": "v0.8.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.8-dev",
+    "title": "v0.8-dev (63d39ef)",
+    "aliases": []
+  },
+  {
+    "version": "v0.7",
+    "title": "v0.7.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.7-dev",
+    "title": "v0.7-dev (1358ab4)",
+    "aliases": []
+  },
+  {
+    "version": "v0.6",
+    "title": "v0.6.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.6-dev",
+    "title": "v0.6-dev (9eda8a1)",
+    "aliases": []
+  },
+  {
+    "version": "v0.5",
+    "title": "v0.5.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.5-dev",
+    "title": "v0.5-dev (354537e)",
+    "aliases": []
+  },
+  {
+    "version": "v0.4",
+    "title": "v0.4.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.4-dev",
+    "title": "v0.4-dev (e324894)",
+    "aliases": []
+  },
+  {
+    "version": "v0.3",
+    "title": "v0.3.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.3-dev",
+    "title": "v0.3-dev (7fc2504)",
+    "aliases": []
+  },
+  {
+    "version": "v0.2",
+    "title": "v0.2.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.2-dev",
+    "title": "v0.2-dev (05b72a8)",
+    "aliases": []
+  },
+  {
+    "version": "v0.1",
+    "title": "v0.1.0",
+    "aliases": []
+  },
+  {
+    "version": "v0.1-dev",
+    "title": "v0.1-dev",
+    "aliases": []
+  },
+  {
+    "version": "v0.0",
+    "title": "v0.0.13",
+    "aliases": []
+  }
+]
