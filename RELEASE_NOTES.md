@@ -2,14 +2,16 @@
 
 ## Summary
 
-Moves the client to[frequenz-client-weather-python](https://github.com/frequenz-floss/frequenz-client-weather-python).
+<!-- Here goes a general summary of what this release is about -->
 
 ## Upgrading
 
-The weather client and CLI tool are no longer included in this package. To
-continue using them, migrate to frequenz-client-weather-python. Follow
-the installation and usage instructions provided in the new repository.
+<!-- Here goes notes on how to upgrade from previous versions, including deprecations and what they should be replaced with -->
 
 ## New Features
 
+<!-- Here goes the main new features and examples or instructions on how to use them -->
+
 ## Bug Fixes
+
+This release relaxes the API common dependency so it can work up to v1.0.0, as all v0.x versions should be compatible from v0.8.0 on.
