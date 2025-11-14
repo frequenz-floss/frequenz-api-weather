@@ -78,7 +78,7 @@ dev-mypy = [
   "frequenz-api-weather[dev-mkdocs,dev-noxfile,dev-pytest]",
 ]
 dev-noxfile = [
-  "nox == 2025.5.1",
+  "nox == 2025.10.16",
   "frequenz-repo-config[api] == 0.13.6",
 ]
 dev-pylint = [
