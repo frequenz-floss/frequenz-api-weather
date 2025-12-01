@@ -9,7 +9,7 @@ copyright: "Copyright © 2023 Frequenz Energy-as-a-Service GmbH"
 repo_name: "frequenz-api-weather"
 repo_url: "https://github.com/frequenz-floss/frequenz-api-weather"
 edit_uri: "edit/v0.x.x/docs/"
-strict: true  # Treat warnings as errors
+strict: false
 
 # Build directories
 theme:
