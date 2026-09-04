@@ -170,6 +170,7 @@ disable = [
 
 [tool.pytest.ini_options]
 asyncio_default_fixture_loop_scope = "function"
+asyncio_debug = true
 testpaths = ["tests"]
 required_plugins = ["pytest-asyncio"]
 filterwarnings = [
