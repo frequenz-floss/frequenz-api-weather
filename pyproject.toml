@@ -3,7 +3,7 @@
 
 [build-system]
 requires = [
-  "setuptools == 82.0.1",
+  "setuptools == 84.0.0",
   "setuptools_scm[toml] == 10.2.1",
   "frequenz-repo-config[api] == 0.19.0",
   # We need to pin the protobuf, grpcio and  grpcio-tools dependencies to make
@@ -169,7 +169,6 @@ disable = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "-vv"
 asyncio_default_fixture_loop_scope = "function"
 testpaths = ["tests"]
 required_plugins = ["pytest-asyncio"]
@@ -186,6 +185,7 @@ filterwarnings = [
 ]
 
 [tool.mypy]
+enable_error_code = ["exhaustive-match"]
 explicit_package_bases = true
 namespace_packages = true
 # This option disables mypy cache, and it is sometimes useful to enable it if
