@@ -4,7 +4,7 @@
 [build-system]
 requires = [
   "setuptools == 84.0.0",
-  "setuptools_scm[toml] == 10.2.1",
+  "setuptools_scm[toml] == 10.2.3",
   "frequenz-repo-config[api] == 0.19.0",
   # We need to pin the protobuf, grpcio and  grpcio-tools dependencies to make
   # sure the code is generated using the minimum supported versions, as older
@@ -68,7 +68,7 @@ dev-mkdocs = [
   "mkdocs-macros-plugin == 1.5.0",
   "mkdocs-material == 9.7.7",
   "mkdocstrings[python] == 1.0.6",
-  "mkdocstrings-python == 2.0.7",
+  "mkdocstrings-python == 2.0.8",
   "frequenz-repo-config[api] == 0.19.0",
 ]
 dev-mypy = [
@@ -83,7 +83,7 @@ dev-noxfile = [
   "frequenz-repo-config[api] == 0.19.0",
 ]
 dev-pylint = [
-  "pylint == 4.0.7",
+  "pylint == 4.0.8",
   # For checking the noxfile, docs/ script, and tests
   "frequenz-api-weather[dev-mkdocs,dev-noxfile,dev-pytest]",
 ]
