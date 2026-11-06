@@ -90,7 +90,7 @@ dev-pylint = [
 dev-pytest = [
   "pytest == 9.2.0",
   "frequenz-repo-config[extra-lint-examples] == 0.19.0",
-  "pytest-asyncio == 1.4.1",
+  "pytest-asyncio == 1.4.1.post1",
 ]
 dev = [
   "frequenz-api-weather[dev-mkdocs,dev-flake8,dev-formatting,dev-mkdocs,dev-mypy,dev-noxfile,dev-pylint,dev-pytest]",
